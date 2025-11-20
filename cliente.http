@@ -1,0 +1,39 @@
+### Buscar todos os clientes
+GET http://localhost:9090/clientes/buscarTodos
+Accept: application/json
+
+
+### Buscar cliente por ID
+GET http://localhost:9090/clientes/buscar/1
+Accept: application/json
+
+
+### Criar cliente
+POST http://localhost:9090/clientes/criar
+Content-Type: application/json
+
+{
+  "nome": "Lucas",
+  "sobrenome": "Lessa",
+  "documento": "53136512",
+  "dataNascimento": "1990-05-10",
+  "email": "lucas.lessa@example.com"
+}
+
+
+### Atualizar cliente
+PUT http://localhost:9090/clientes/atualizar/1
+Content-Type: application/json
+
+{
+  "nome": "João Atualizado",
+  "sobrenome": "Silva",
+  "documento": "98765432100",
+  "dataNascimento": "1992-01-01",
+  "email": "joao.atualizado@example.com"
+}
+
+
+### Excluir cliente
+DELETE http://localhost:9090/clientes/excluir/1
+Accept: application/json
